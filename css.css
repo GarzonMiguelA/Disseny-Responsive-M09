@@ -155,11 +155,11 @@ main {
 
     .barra-roja {
         background-color: red;
-        grid-column: 1 / -1; /* Ocupa todo el ancho */
-        grid-row: 2; /* Entre verde_top y magenta */
-        height: 50px; /* Igual que magenta */
-        margin: 0; /* Elimina márgenes innecesarios */
-        width: 100%; /* Ocupa el ancho completo de la cuadrícula */
+        grid-column: 1 / -1;
+        grid-row: 2; 
+        height: 50px; 
+        margin: 0; 
+        width: 100%; 
     }
 
     .magenta {
