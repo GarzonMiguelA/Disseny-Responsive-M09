@@ -140,3 +140,69 @@ main {
         width: 100%;
     }
 }
+@media (max-width: 500px) {
+    main {
+        grid-template-rows: auto auto auto auto auto auto; 
+        gap: 0; 
+        overflow-x: hidden; /* Evitamos deslizamiento horizontal */
+    }
+
+    .verde_top {
+        grid-column: 1;
+        grid-row: 1; /* Coloca el bloque verde superior en la primera fila */
+        width: 100%;
+    }
+
+    .barra-roja {
+        grid-column: 1; 
+        grid-row: 2; /* Coloca la barra roja en la segunda fila */
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3.125rem; /* Ajusta la altura para que sea estrecha */
+        margin: 0 auto;
+    }
+
+    .magenta {
+        grid-column: 1;
+        grid-row: 3; /* Coloca el bloque magenta en la tercera fila */
+        margin: 0 auto;
+        width: 100%;
+        height: 3.125rem; /* Ajusta la altura para que sea estrecha */
+    }
+
+    .naranja {
+        grid-column: 1;
+        grid-row: 4; /* Coloca los bloques naranjas en la cuarta fila */
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .naranja-izquierda,
+    .naranja-derecha {
+        width: 100%;
+        margin: 0;
+    }
+
+    .azul {
+        grid-column: 1; 
+        grid-row: 5; /* Coloca los bloques azules en la quinta fila */
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        grid-template-rows: repeat(5, auto); /* Cinco filas por columna */
+        gap: 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .azul div {
+        width: 100%; 
+    }
+
+    .verde_bottom {
+        grid-column: 1;
+        grid-row: 6; /* Coloca el bloque verde inferior en la sexta fila */
+        width: 100%;
+    }
+}
